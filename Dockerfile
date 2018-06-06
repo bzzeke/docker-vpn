@@ -1,4 +1,6 @@
-FROM alpine:latest
+ARG arch=amd64
+FROM ${arch}/alpine:latest
+
 WORKDIR /app
 VOLUME ["/app"]
 
